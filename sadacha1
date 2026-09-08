@@ -13,3 +13,41 @@ int main() {
     return 0;
 }
 
+#include <iostream>
+using namespace std;
+
+int main() {
+    double A;
+    cin >> A;
+
+    double A2, A3, A5, A10, A15;
+
+    A2 = A * A;
+    A3 = A2 * A;
+    A5 = A3 * A2;
+    A10 = A5 * A5;
+    A15 = A10 * A5;
+
+    cout << "A^2 = " << A2 << endl;
+    cout << "A^3 = " << A3 << endl;
+    cout << "A^5 = " << A5 << endl;
+    cout << "A^10 = " << A10 << endl;
+    cout << "A^15 = " << A15 << endl;
+
+    return 0;
+}
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    double a, b;
+
+    cin >> a >> b;
+
+    double H = (2 * a * b) / (a + b);
+
+    cout << "H = " << H;
+
+    return 0;
+}
