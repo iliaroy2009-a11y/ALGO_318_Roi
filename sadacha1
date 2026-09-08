@@ -1,54 +1,111 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-    double V1, V2, S, T;
+int main()
+{
+    // =====================================================
+    // Задача 1. Відстань між двома автомобілями
+    // =====================================================
 
-    cin >> V1 >> V2 >> S >> T;
+    // Виведення повідомлення про початок виконання задачі
+    cout << "=== Zadacha 1 ===" << endl;
+    cout << "Obchyslennia vidstani mizh avtomobiliamy" << endl;
 
-    double distance = S + (V1 + V2) * T;
+    // Декларація змінних
+    double V1, V2, S, T, distance;
 
-    cout << "Vidstan cherez T hodin: " << distance << " km";
+    // Введення швидкості першого автомобіля
+    cout << "Vvedit shvydkist pershoho avtomobilia V1 (km/h): ";
+    cin >> V1;
 
-    return 0;
-}
+    // Введення швидкості другого автомобіля
+    cout << "Vvedit shvydkist druhoho avtomobilia V2 (km/h): ";
+    cin >> V2;
 
-#include <iostream>
-using namespace std;
+    // Введення початкової відстані між автомобілями
+    cout << "Vvedit pochatkovu vidstan S (km): ";
+    cin >> S;
 
-int main() {
+    // Введення часу руху автомобілів
+    cout << "Vvedit chas T (hod): ";
+    cin >> T;
+
+    // Обчислення відстані між автомобілями
+    // Автомобілі рухаються у протилежних напрямках,
+    // тому їхні швидкості додаються
+    distance = S + (V1 + V2) * T;
+
+    // Виведення результату
+    cout << "Vidstan mizh avtomobiliamy cherez T hodyn: "
+         << distance << " km" << endl;
+
+
+    // =====================================================
+    // Задача 2. Обчислення степенів числа A
+    // =====================================================
+
+    // Виведення повідомлення про початок виконання задачі
+    cout << endl;
+    cout << "=== Zadacha 2 ===" << endl;
+    cout << "Obchyslennia stepeniv chysla A" << endl;
+
+    // Декларація основної та допоміжних змінних
     double A;
-    cin >> A;
-
     double A2, A3, A5, A10, A15;
 
+    // Введення числа A
+    cout << "Vvedit chyslo A: ";
+    cin >> A;
+
+    // Обчислення A у другому степені
     A2 = A * A;
+
+    // Обчислення A у третьому степені
     A3 = A2 * A;
+
+    // Обчислення A у п'ятому степені
     A5 = A3 * A2;
+
+    // Обчислення A у десятому степені
     A10 = A5 * A5;
+
+    // Обчислення A у п'ятнадцятому степені
     A15 = A10 * A5;
 
+    // Виведення всіх знайдених степенів
     cout << "A^2 = " << A2 << endl;
     cout << "A^3 = " << A3 << endl;
     cout << "A^5 = " << A5 << endl;
     cout << "A^10 = " << A10 << endl;
     cout << "A^15 = " << A15 << endl;
 
+
+    // =====================================================
+    // Задача 3. Середнє гармонійне двох чисел
+    // =====================================================
+
+    // Виведення повідомлення про початок виконання задачі
+    cout << endl;
+    cout << "=== Zadacha 3 ===" << endl;
+    cout << "Obchyslennia serednoho harmonichnoho" << endl;
+
+    // Декларація змінних
+    double a, b, H;
+
+    // Введення першого числа
+    cout << "Vvedit chyslo a: ";
+    cin >> a;
+
+    // Введення другого числа
+    cout << "Vvedit chyslo b: ";
+    cin >> b;
+
+    // Обчислення середнього гармонійного
+    H = (2 * a * b) / (a + b);
+
+    // Виведення результату
+    cout << "Serednie harmonichne H = " << H << endl;
+
+    // Завершення роботи програми
     return 0;
 }
-
-#include <iostream>
-using namespace std;
-
-int main() {
-    double a, b;
-
-    cin >> a >> b;
-
-    double H = (2 * a * b) / (a + b);
-
-    cout << "H = " << H;
-
-    return 0;
-}
-
