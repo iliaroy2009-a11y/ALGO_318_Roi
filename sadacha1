@@ -1,2 +1,15 @@
-<script src="//onlinegdb.com/embed/js/N7llDaEixZ?theme=dark"></script>
+#include <iostream>
+using namespace std;
+
+int main() {
+    double V1, V2, S, T;
+
+    cin >> V1 >> V2 >> S >> T;
+
+    double distance = S + (V1 + V2) * T;
+
+    cout << "Vidstan cherez T hodin: " << distance << " km";
+
+    return 0;
+}
 
