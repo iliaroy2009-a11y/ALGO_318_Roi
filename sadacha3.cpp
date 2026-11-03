@@ -7,18 +7,38 @@ using namespace std;
 void task_if14()
 {
     double a, b, c;
-cout << "Enter three numbers: ";
-if (!(cin >> a >> b >> c))
+
+void task_if14()
 {
-    cout << "Wrong input!" << endl;
-    return;
-}
+    double a, b, c;
+    double mn, mx;
 
-double mn = min(a, min(b, c));
-double mx = max(a, max(b, c));
+    cout << "Enter three numbers: ";
 
-cout << "Minimum: " << mn << endl;
-cout << "Maximum: " << mx << endl;
+    if (!(cin >> a >> b >> c))
+    {
+        cout << "Wrong input!" << endl;
+        return;
+    }
+
+    // Знаходимо найменше число
+    if (a <= b && a <= c)
+        mn = a;
+    else if (b <= a && b <= c)
+        mn = b;
+    else
+        mn = c;
+
+    // Знаходимо найбільше число
+    if (a >= b && a >= c)
+        mx = a;
+    else if (b >= a && b >= c)
+        mx = b;
+    else
+        mx = c;
+
+    cout << "Minimum: " << mn << endl;
+    cout << "Maximum: " << mx << endl;
 }
 // Завдання 2. If28
 // Визначити кількість днів у році.
